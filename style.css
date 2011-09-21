@@ -1,0 +1,363 @@
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+
+
+body {color: #444; font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif; background-color: #fafafa; font-size: 16px;}
+h1, h2 {font-family: Constantia, 'Hoefler Text', "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5);}
+h1, h2 {font-size:40px;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABNJREFUeNpieP3qFcP///8BAgwAFn0FvUDC/nEAAAAASUVORK5CYII=); background-repeat: repeat-x; background-position: bottom;}
+h2 {font-size:32px;}
+h1 em {color: #57A900;}
+dt {margin-top: 16px; font-weight: bold;}
+dd {padding-bottom: 6px;}
+pre, code {padding: 0; margin: 0; background-color: #F1F0F7;}
+a, a:visited {text-decoration: none; color: #06e;}
+a:hover {text-decoration: underline;}
+article {margin: 0 auto; width: 960px; padding-bottom: 24px;}
+.smile {padding-left: 16px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJnSURBVDjLpZPNS9RhEMc/z29t1d1tfSmhCAwjioqoKNYuYkRRFB300MWT3eooeMn6C4TunYoiOgSKkGAUhh0SjJCwsBdtfQMN17Ta2v39nueZ6WBtktGh5jLDMPPhC/Mdo6r8T5T93nCPTUqVDhVOi5BRBRVGRBhQ4drGc5pfO2/WKnCPTbMKN0x9Z4OpzqDxWlCPFnL45VHCd91ZEdprWnRoHcANmhatbu4JtrShiSr8t9dIuIS6IpgKgoqdGBsQztwj/DDUWndee0sAO2hqVZmO7b+bkuAzvpgF+wVxIeqLqxBRTHk9sfL9fBq+kBdh+9Y2/RgAqNARbO9KaRwkzIL7ymBfDiQCH/HkIYjN4z6P4cNJEnu6UuLpAAgARDhrahqRYhZ1BVQsx85UomJRb2lqzqMSojaPW3lOWfUuxHN2LWAv5WnErZSWVCzqItRHP2qL+ggJc0CI9zSUACoU1BXBOx71PmXq7dzqorc/csj05BKDD+ZQsaCKCLFfCjxZbAGIc7R5N+9ezTI7uYD6EBXLTHaZiTfLZBrTmCCB+DJsyETJSCL029zowaC6nkRynqNNDYw9m2L8xSx4S7LSkMlUkUzEKEsfoJCbxkb0l8643GPqRHifarydEvsGnx9HohXUhYj7eUaIJXdi0qeYvn8x7yw7Dl3WxQCgplUXRWj/NnELdBuxdCMmVouKgihBfDMb6k6gieMsvezDRrQfuqyL66w8f8ecFM/15N7OhvimfQQbAhCHCz1f59+yMNyddZZLh6/owB9/AWD2pkmJp1OE096TcRE4y4izDDhL95Grf3mmf4nvrQOLvcb/mlMAAAAASUVORK5CYII=) no-repeat scroll 0 50%;}
+header, #footer {color: #ddd; background-image: url(data:image/png;base64,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);}
+header {height: 65px;}
+#footer article {min-height: 130px; padding: 12px 0 24px;}
+#footer h2 {color: #ddd;text-shadow: 2px 2px 2px #666;}
+#footer a {color: #FFE59E}
+#js-error {color: #f00;}
+.js #js-error { display: none; visibility: hidden; }
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+.ui-state-disabled { cursor: default !important; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget-content { border: 1px solid #aaaaaa; background-color: #ffffff; color: #222222; }
+.ui-widget-content a { color: #222222; }
+.ui-widget-header { border: 1px solid #aaaaaa; background-color: #cccccc; color: #222222; font-weight: bold; }
+.ui-widget-header a { color: #222222; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3; background: #e6e6e6 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAAMUlEQVQ4T2N6+/btfyYGIBglRolRYtgSP3/+hLIYGRmRWfgJsDogwNA7SowSo8SgIwCUognz12nsyQAAAABJRU5ErkJggg==) 50% 50% repeat-x; font-weight: normal; color: #555555; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #999999; background: #dadada url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAANklEQVQ4jWN48uTJfyYGBgaGUWKUGCWGLfHt2zcoi5GREYNgYmJCZiG42IiB98woMUqMEtgIAMdjCdyg+eEBAAAAAElFTkSuQmCC) 50% 50% repeat-x; font-weight: normal; color: #212121; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #aaaaaa; background-color: #ffffff; font-weight: normal; color: #212121; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1; background-color: #fbf9ee; color: #363636; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background-color: #fef1ec; color: #cd0a0a; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-icon { width: 16px; height: 16px; }
+.ui-state-default .ui-icon { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAhCAYAAABObyzJAAAAp0lEQVR42u2YQQqAMAwEfUbfLP2z9hZoT2XKgjIDAS+mmyVakktEROSX9Ls/I9pXxbcqYL/wOYCBpQHkAOeWFyM2zatEcQNXHS1nYJ07P4OXeQHUxMD5rIl4+64EOjDxBbQrDzfw5C/EW1hERERERMRJBAzSYB4FszCsg2oP7gPXHNxAroFoB/tAXsARA7kJ+X3gyZ1aoANB94f3gUSI+0BvYRERkXO8/vPbZCGlUr4AAAAASUVORK5CYII=); }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-state-active .ui-icon {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAgCAYAAACFM/9sAAAAcklEQVR42u3VwQmAMAwFUMfIQMX9N1J7tSf7BS28BznGJCXEDQAAAAAAAJbW9nZcUas2X8kAPfcewTcqnWOu7hiPiiYD9Jz0Ad/sYSpvjIqTk0bSLX6pdrJE+foGjcQbGAyf9l6f39P0BqY3zF8YgN85AenSo9NvqBoEAAAAAElFTkSuQmCC); }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+.ui-widget-overlay { background-color: #aaaaaa; opacity: .30;filter:Alpha(Opacity=30); }
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background-color: #aaaaaa; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.ui-accordion { width: 100%; }
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+.ui-accordion .ui-accordion-content-active { display: block; }
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

@@ -1,99 +1,239 @@
 <!DOCTYPE html>
-<html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset='utf-8'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <meta name="author" content="Chris O'Connell" >
+    <meta name="description" content="This is how you would modify the description for an individual page. To set the description globally, modify the Bootstrap.php file." >    
+    <title>HTML5Boilerplate ZF edition</title>    
+    <link href="style.css" media="all" rel="stylesheet" type="text/css" >    
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
 
-  <title>chrisoconnell/HTML5Boilerplate-ZF-edition @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #e9f0fb;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #160f04; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #160f04; }
-    h3 { text-align: center; color: #160f04; }
-    a { color: #160f04; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
 </head>
 
 <body>
-  <a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
+    <header>
 
-    <div class="download">
-      <a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </header>
+    <div id="main" role="main">
+          <article>
+
+    <h1>HTML5Boilerplate <em>ZF edition</em> version 1.0</h1>
+
+    <div id="js-error">
+        <h3>Javascript was not detected!</h3>
     </div>
 
-    <h1><a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition">HTML5Boilerplate-ZF-edition</a>
-      <span class="small">by <a href="http://github.com/chrisoconnell">chrisoconnell</a></span></h1>
+    <p>Bringing the awesome-ness of HTML5 Boilerplate and the Zend Framework together!</p>
 
-    <div class="description">
-      Bringing the awesome-ness of HTML5 Boilerplate and the Zend Framework together!
-    </div>
-
-    <h2>Dependencies</h2>
-<p>Zend Framework version 1.8 or higher.</p>
-<h2>Install</h2>
-<p>Find the location of your Zend Framework install. Mine is at "/usr/local/zend/share/ZendFramework" but yours could be different.
-
-Now go to "library/Zend/Tool/" so your final path should be "/path/to/ZendFramework/library/Zend/Tool/"
-
-Make a backup of the Project directory (just in case).
-
-Replace the "Project.php" file in the "Project/Provider" directory with the one from HTML5Boilerplate-ZF-edition. 
-
-Copy every file beginning with "H5bp" into "Project/Context/Zf"
-
-
-So if you are doing everything from the command line, it will look like:
-cd /path/to/ZendFramework/library/Zend/Tool/
-cp -r Project Project-old
-cp /path/to/HTML5Boilerplate-ZF-edition/Project.php Project/Provider/
-cp /path/to/HTML5Boilerplate-ZF-edition/H5bp* Project/Context/Zf/
-</p>
-<h2>Authors</h2>
-<p>Chris O'Connell (chris@chrisoconnell.info)
-<br/>
-<br/>      </p>
-<h2>Contact</h2>
-<p>Chris O'Connell (chris@chrisoconnell.info)
-<br/>      </p>
-
-
+	<p>
+		Wouldn&rsquo;t it be nice it you could just type <code>zf create project MyProject</code> into the command line and have all of the 
+		HTML5 Boilerplate goodness magically injected into your new Zend project? Well now you can!
+    </p>
+    
+    <p>This project uses Zend_Tool to work its magic so any version of Zend Framework 1.8 or higher should work. Just download the 
+    	files and follow the instructions below.
+    </p>
+    
     <h2>Download</h2>
     <p>
       You can download this project in either
       <a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition/zipball/master">zip</a> or
       <a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition/tarball/master">tar</a> formats.
     </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
       <pre>$ git clone git://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition</pre>
     </p>
+    
+    <h2>Install</h2>
+	<ol>
+		<li>Find the location of your Zend Framework install. Mine is at "/usr/local/zend/share/ZendFramework" but yours could be different.</li>
+		<li>Now go to "library/Zend/Tool/" so your final path should be "/path/to/ZendFramework/library/Zend/Tool/"</li>
+		<li>Make a backup of the Project directory (just in case).</li>
+		<li>Replace the "Project.php" file in the "Project/Provider" directory with the one from HTML5Boilerplate-ZF-edition. </li>
+		<li>Copy every file beginning with "H5bp" into "Project/Context/Zf"</li>
+	</ol>
+	<p>So if you are doing everything from the command line, it will look like:
+	  <pre>
+$ cd /path/to/ZendFramework/library/Zend/Tool/
+$ cp -r Project Project-old
+$ cp /path/to/HTML5Boilerplate-ZF-edition/Project.php Project/Provider/
+$ cp /path/to/HTML5Boilerplate-ZF-edition/H5bp* Project/Context/Zf/</pre>
+	</p>
+	
+	<p>
+		Thats it! Now anytime you create a new Zend Framework project, it will automatically have the HTML 5 Boilerplate 
+		template built in. You do not need to run <code>zf enable layout</code> as it is part of the new create project command.
+	</p>
+	
+	<h2>Project Files</h2>
+    <div class="accordion">
+        <h3><a href="#">Files to be copied to library/Zend/Tool/Project/Context/Zf</a></h3>
+        <div>
+        <dl>
+            <dt>H5bpJsLibsDirectory.php</dt>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/chrisoconnell/HTML5Boilerplate-ZF-edition">chrisoconnell/HTML5Boilerplate-ZF-edition</a>
+                <dd>Creates the public/js/libs directory.</dd>
+            <dt>H5bpJsLibsJqueryFile.php</dt>
+                <dd>Creates the public/js/libs/jquery-1.6.2.min.js file.</dd>
+                <dd>Contents are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpJsLibsModernizrFile.php</dt>
+                <dd>Creates the public/js/libs/modernizr-2.0.6.min.js file.</dd>
+
+                <dd>Contents are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpJsPluginsFile.php</dt>
+                <dd>Creates the public/js/plugins.js file.</dd>
+                <dd>Contents are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpJsSriptFile.php</dt>
+                <dd>Creates the public/js/script.js file.</dd>
+
+                <dd>Contents &mdash; what little there are &mdash; are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpPublicStylesheetsDirectory.php</dt>
+                <dd>Creates the public/css directory.</dd>
+            <dt>H5bpPublicStylesheetFile.php</dt>
+                <dd>Creates the public/css/styles.css file.</dd>
+
+                <dd>Contents are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpPublicRobotsFile.php</dt>
+                <dd>Creates the public/robots.txt file.</dd>
+                <dd>Contents are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpHtaccessFile.php</dt>
+                <dd>Creates the public/.htaccess file.</dd>
+
+                <dd>Includes all the content from the HTML5 Boilerplate 2.0 version plus the rules defined in a standard
+                    Zend Framework project.
+                </dd>
+            <dt>H5bpPublicHumansFile.php</dt>
+                <dd>Creates the public/humans.txt file.</dd>
+                <dd>Contents are unchanged from the HTML5 Boilerplate 2.0 version.</dd>
+            <dt>H5bpPublicImagesDirectory.php</dt>
+                <dd>Creates the public/img directory.</dd>
+
+            <dt>H5bpLayoutScriptFile.php</dt>
+                <dd>Creates the application/layouts/scripts/layout.phtml file.</dd>
+                <dd>Intergrated standard Zend view helpers into layout inplace of hardcoding meta data and css/js files.</dd>
+                <dd>Layout script works in conjunction with the bootstrap file to define meta data and css/js files.</dd>
+                <dd>The resulting source html will look almost identical to HTML 5 Boilerplate 2.0 index.html file.
+                    The biggest difference will be the comments which had to be grouped together.
+                </dd>
+            <dt>H5bpViewScriptFile.php</dt>
+
+                <dd>Creates the application/views/scripts/index/index.phtml file</dd>
+                <dd>Creates the application/views/scripts/error/error.phtml file &mdash; modified to be a blend of the HTML 5
+                    Boilerplate 2.0 404.html file and a standard Zend Framework project error.phtml file.
+                </dd>
+            <dt>H5bpBootstrapFile.php</dt>
+                <dd>Creates the application/Bootstrap.php file.</dd>
+                <dd>Added _initViewSettings resource to set layout meta data and define css/js files.</dd>
+
+            <dt>H5bpApplicationConfigFile.php</dt>
+                <dd>Creates the application/configs/application.ini file.</dd>
+                <dd>Similar to the application.ini file created by the standard Zend project.</dd>
+                <dd>Added settings for doctype and charset.</dd>
+                <dd>Added setting for baseUrl but left commented out as Zend <em>should</em> be able to auto detected if your
+                    VHOST is set properly.
+                </dd>
+
+        </dl>
+        </div>
+
+        <h3><a href="#">Files to be copied to library/Zend/Tool/Project/Provider</a></h3>
+        <div>
+        <dl>
+            <dt>Project.php</dt>
+                <dd>This is the file that sets the file directory structure and calls all of the helper php files above.</dd>
+
+                <dd>If you would like to add or remove files from this project, this file will need to be modified accourdingly.</dd>
+            <dt>Manifest.php</dt>
+                <dd>This file has not been modified from the original Zend Framework version for this project.</dd>
+                <dd>However, if you would like to rename the Project.php file &mdash; to say H5bpProject.php &mdash then you would 
+                    have to modify this file.
+                </dd>
+                <dd>The reason for doing such would be if you wanted to have the command line 
+                    <pre>zf create project myProject</pre> create a standerd Zend project. And have the command line
+                    <pre>zf create h5bpProject myH5bpProject</pre> create this project.
+                </dd>
+
+        </dl>
+        </div>
     </div>
+    
+    <h2>What&rsquo;s not included?</h2>
+    <p>
+        I&rsquo;ve worked very hard to make this project as complete and thorough as possible. Even still, there were a few 
+        files contained in the HTML 5 Boilerplate distribution that I have left out. 
+    </p>
 
+    <div class="accordion">
+        <h3><a href="#">Files from HTML 5 Boilerplate not included in this project</a></h3>
+        <div>
+        <dl>
+            <dt>apple-touch-icons &amp; favicon</dt>
+                <dd>This was because of technical reasons as I don&rsquo;t know how to include non-text files using Zend_Tool.</dd>
+
+                <dd>If you know how to do this please contribute to this project.</dd>
+            <dt>build files</dt>
+                <dd>Contain exe files which I don&rsquo;t know how to include.</dd>
+            <dt>test files</dt>
+                <dd>I feel this project will be better served by more Zend Framework specific tests. While the project does
+                    create the test folder from a standard Zend Framework project, I feel it is incomplete.</dd>
+                <dd>Will impove the test files in future versions of this project.</dd>
+
+        </dl>
+        </div>
+    </div>
+  </article>
+    
+  <div id="footer">
+    <article>
+        <h2>For more information on this project:</h2>
+        <ul>
+
+            <li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+            <li><a href="http://framework.zend.com/">Zend Framework Website</a></li>
+            <li><a href="https://chrisoconnell@github.com/chrisoconnell/HTML5Boilerplate-ZF-edition.git">HTML5Boilerplate ZF edition</a>
+                &mdash; Official github download site. Got any ideas to make this project better? Contribute here.
+            </li>
+        </ul>
+        <h2>Special thanks to:</h2>
+
+        <ul>
+            <li>Harry Roberts for his <a href="http://csswizardry.com/type-tips/">typography quick tips</a>. A collection of good to 
+                know tips, because web apps should be functional <em>and</em> beautiful.
+            </li>
+            <li>Mark James for his <a href="http://www.famfamfam.com/lab/icons/silk/">free icon set</a>.</li>
+            <li>Adobe kuler for making it easier to <a href="http://kuler.adobe.com">pick the right color</a>.</li>
+
+        </ul>
+    </article>
   </div>
+                     
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <script type="text/javascript" src="js/plugins.js"></script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
 
   
 </body>
