@@ -17,6 +17,7 @@ HTML5 Boilerplate goodness *magically* injected into your new Zend project? Well
 
 
 So if you are doing everything from the command line, it will look like:
+
      cd /path/to/ZendFramework/library/Zend/Tool/
      cp -r Project Project-old
      cp /path/to/HTML5Boilerplate-ZF-edition/Project.php Project/Provider/
